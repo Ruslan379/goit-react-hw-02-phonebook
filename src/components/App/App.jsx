@@ -51,9 +51,18 @@ export class App extends Component {
   // contactInputId = nanoid();
 
 
-//! Добавление контакта в this.state.contacts
+  //! Добавление контакта в this.state.contacts
   addСontact = (name, number) => {
-    this.setState({ contacts: [ ...this.state.contacts, { id: nanoid(), name, number }  ] }) //* Так ПРАВИЛЬНО!!!
+    const contact = {
+      id: nanoid(),  
+      name,
+      number,
+    };
+    // console.log(contact); //!
+    this.setState(({ contacts }) => ({
+      contacts: [...contacts, contact],
+    }));
+    // this.setState({ contacts: [ ...this.state.contacts, { id: nanoid(), name, number }  ] }) //* Так ПРАВИЛЬНО и РАБОТАЕТ!!!
     // this.state.contacts.push({ id: nanoid(), name, number }); //? Так Работает, но НЕЛЬЗЯ!!!
     // this.setState({ contacts: [this.state.contacts.push({ id: nanoid(), name, number })] }); //! Так НЕ РАБОТАЕТ!!!
   };
