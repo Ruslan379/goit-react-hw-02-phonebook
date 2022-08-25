@@ -1,0 +1,21 @@
+/* import styled from '@emotion/styled'; */
+
+
+.FilterLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 500;
+  color: #ac0000;
+
+}
+
+.FilterInput {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #690101;
+}
+
