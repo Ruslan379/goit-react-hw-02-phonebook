@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './Container.css';
-// import 'components/Container/Container.css';
 
-import css from 'components/Container/Container.module.css' //todo = старый вариант импорта стилей
+import css from 'components/Container/Container.module.css' 
 
 
 export const Container = ({ children }) =>
@@ -18,4 +16,3 @@ Container.propTypes = {
 
 
 
-// export default Container;
