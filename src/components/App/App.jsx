@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
 
 import { nanoid } from 'nanoid';
 
@@ -14,21 +12,9 @@ import { ContactList } from 'components/ContactList/ContactList';
 
 // * +++++++++++++++++++++++++++ CLASS ++++++++++++++++++++++++++++++++++
 export class App extends Component {
-  static defaultProps = {
-    initialContacts: [],
-    initialFilter: ''
-  };
-
-  static propTypes = {
-    initialContacts: PropTypes.array.isRequired,
-    initialFilter: PropTypes.string.isRequired,
-    contacts: PropTypes.array,
-    filter: PropTypes.string
-  };
-
   state = {
-    contacts: this.props.initialContacts,
-    filter: this.props.initialFilter
+    contacts: [],
+    filter: ''
   };
 
 
