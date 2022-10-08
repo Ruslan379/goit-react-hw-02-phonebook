@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 
 import css from 'components/ContactForm/ContactForm.module.css' 
 
@@ -15,9 +15,6 @@ export class ContactForm extends Component {
     name: '',
     number: ''
   };
-
-
-  contactInputId = nanoid();
   
 
 // * +++++++++++++++++++++++++++ МЕТОДЫ ++++++++++++++++++++++++++++++++++
@@ -61,7 +58,7 @@ export class ContactForm extends Component {
           className={css.Form}
           onSubmit={this.handleSubmit}>
 
-          <label htmlFor={this.contactInputId}>
+          <label>
             Name
             <br />
             <input

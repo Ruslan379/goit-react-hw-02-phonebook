@@ -6,7 +6,7 @@ import css from 'components/ContactList/ContactList.module.css'
 
 
 
-export const ContactList = ({ visibleContacts, onDeleteTodo }) => (
+export const ContactList = ({ visibleContacts, onDeleteContact  }) => (
   <ul className={css.ContactList}>
     {visibleContacts.map(({ id, name, number }) => (
       <li
@@ -17,7 +17,7 @@ export const ContactList = ({ visibleContacts, onDeleteTodo }) => (
         <button
           type="button"
           className={css.ContactListBtn}
-          onClick={() => onDeleteTodo(id)}
+          onClick={() => onDeleteContact(id)}
         >
           Delete
         </button>
@@ -29,7 +29,7 @@ export const ContactList = ({ visibleContacts, onDeleteTodo }) => (
 
 ContactList.propTypes = {
   visibleContacts: PropTypes.array.isRequired,
-  onDeleteTodo: PropTypes.func.isRequired,
+  onDeleteContact : PropTypes.func.isRequired,
 };
 
 
