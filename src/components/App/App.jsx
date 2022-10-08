@@ -93,15 +93,17 @@ export class App extends Component {
         <h2>Contacts</h2>
         <p>Total: {totalContacts}</p>
 
-        <Filter
+        {contacts.length > 0 && (<Filter
           value={filter}
           onChange={this.changeFilter}
         />
+        )}
   
-        <ContactList
+        {contacts.length > 0 && (<ContactList
           visibleContacts={visibleContacts}
           onDeleteTodo={this.deleteTodo}
         />
+        )}
 
       </Container>
     );
