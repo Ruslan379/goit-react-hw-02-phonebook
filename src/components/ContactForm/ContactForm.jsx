@@ -7,7 +7,6 @@ import css from 'components/ContactForm/ContactForm.module.css'
 
 
 
-
 // * +++++++++++++++++++++++++++ CLASS ++++++++++++++++++++++++++++++++++
 
 export class ContactForm extends Component {
