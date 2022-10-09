@@ -73,12 +73,11 @@ export class ContactForm extends Component {
               required
               value={name}
               onChange={this.handleChange}
-              id={this.contactInputId}
             />
           </label>
           <br />
 
-          <label htmlFor={this.contactInputId}>
+          <label>
             Number
             <br />
             <input
@@ -89,7 +88,6 @@ export class ContactForm extends Component {
               required
               value={number}
               onChange={this.handleChange}
-              id={this.contactInputId}
             />
           </label>
           <br />
